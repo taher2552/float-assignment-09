@@ -226,7 +226,7 @@ button:hover, btn:hover{
 .art0{
     margin-bottom: 65px;
     text-align: center;
-    color: #c15355;
+    color: var(--primary);
 }
 
 .art0 h3{
