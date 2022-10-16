@@ -9,6 +9,22 @@
     --ternary: #e3e3e3;
 }
 
+.fixed{
+    position: fixed;
+    bottom:30px;
+    right:30px;
+}
+
+.upward{
+    background-color:#6c6b6b;
+    height:60px;
+    width:50px;
+    border-radius: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 header{
     background-color: var(--primary);
     position:fixed;
@@ -43,9 +59,18 @@ header{
 a{
     margin-left: 20px;
     margin-right: 20px;
-    font-size: 30px;
+    font-size: 25px;
     text-decoration: none;
     color:white;
+    padding: 10px;
+}
+
+.link a:hover{
+    cursor: pointer;
+    background-color: #e1afaf;
+    color: #c15355;
+    border-radius: 30px;
+
 }
 
 
@@ -73,20 +98,14 @@ a{
     padding:10px;
     
 }
-.article2{
+.article2, .article3{
     float: left;
     width:22%;
     height:242px;
     padding: 10px;
     margin-left: 40px;
 }
-.article3{
-    float: left;
-    width:22%;
-    height:242px;
-    padding: 10px;
-    margin-left: 40px;
-}
+
 
 .center{
     margin-left:17%;
@@ -117,6 +136,13 @@ button{
     font-size: 20px;
     padding: 12px;
     border:none;
+}
+
+button:hover, btn:hover{
+    background-color:white;
+    color:var(--primary);
+    border:2px solid var(--primary);
+    cursor: pointer;
 }
 
 
@@ -179,7 +205,7 @@ button{
     margin-bottom: 65px;
     background-color:var(--primary);
 }
-.tiles2{
+.tiles2, .tiles3, .tiles4{
     border:2px solid white;
     width:20%;
     height:320px;
@@ -189,26 +215,7 @@ button{
     position: relative;
     background-color:var(--primary);
 }
-.tiles3{
-    border:2px solid white;
-    width:20%;
-    height:320px;
-    float:left;
-    margin-left: 30px;
-    margin-bottom:65px;
-    position: relative;
-    background-color:var(--primary);
-}
-.tiles4{
-    border:2px solid white;
-    width:20%;
-    height:320px;
-    float:left;
-    margin-left: 30px;
-    margin-bottom:65px;
-    position: relative;
-    background-color:var(--primary);
-}
+
 
 
 /* last section css */
@@ -302,7 +309,12 @@ footer{
 
 .icon a{
     text-decoration: none;
-    color: #c15355;
+    color: var(--primary);
+}
+
+.icon a:hover{
+    color:#6938b3;
+    cursor: pointer;
 }
 
 .copyright p{
