@@ -29,6 +29,7 @@ header{
     background-color: var(--primary);
     position:fixed;
     width: 100%;
+    z-index: 1;
    
 }
 .clearfix::before , .clearfix::after{
